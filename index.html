@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waqt · Support</title>
+<meta name="description" content="Support and contact for Waqt — offline prayer times, qibla and adhan.">
+<style>
+  :root { color-scheme: dark light; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 48px 24px;
+    line-height: 1.65; color: #F4EFE6;
+    background: linear-gradient(180deg, #050914 0%, #131B34 100%);
+    background-attachment: fixed; min-height: 100vh;
+  }
+  @media (prefers-color-scheme: light) {
+    body { color: #131B34; background: linear-gradient(180deg, #FBF8F2 0%, #FFFFFF 100%); }
+    .card { background: #FFFFFF; border-color: #E7E0D2; }
+    .muted { color: #6B6558; }
+    a { color: #B8801F; }
+  }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 6px; }
+  .brand-mark {
+    width: 52px; height: 52px; border-radius: 13px; flex: none;
+    background: linear-gradient(180deg, #050914, #131B34);
+    border: 1px solid rgba(255,181,77,.25);
+    display: grid; place-items: center;
+  }
+  h1 { margin: 0; font-size: 30px; letter-spacing: .2px; }
+  .tagline { margin: 6px 0 36px; }
+  .muted { color: #9A937F; }
+  h2 { font-size: 19px; margin: 40px 0 14px; }
+  .card {
+    border: 1px solid rgba(244,239,230,.14);
+    background: rgba(244,239,230,.04);
+    border-radius: 14px; padding: 18px 22px; margin-bottom: 14px;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 16px; }
+  .card p { margin: 0; font-size: 15px; }
+  a { color: #FFB54D; }
+  .contact { font-size: 17px; }
+  hr { border: 0; border-top: 1px solid rgba(244,239,230,.14); margin: 48px 0 0; }
+  footer { margin-top: 28px; font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="brand">
+  <div class="brand-mark">
+    <svg width="34" height="20" viewBox="0 0 92 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M6 34 Q40 12 66 14" fill="none" stroke="#E8A24A" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="70" cy="13" r="9.5" fill="#FFB54D"/>
+    </svg>
+  </div>
+  <div>
+    <h1>Waqt</h1>
+    <div class="muted" style="font-size:14px">Prayer times, qibla and adhan — offline</div>
+  </div>
+</div>
+
+<p class="tagline muted">Support page. If something isn't working, the fastest way to reach a
+human is the email below — it goes straight to the developer.</p>
+
+<h2>Contact</h2>
+<div class="card">
+  <p class="contact"><a href="mailto:mustafasalimerek@gmail.com">mustafasalimerek@gmail.com</a></p>
+  <p class="muted" style="margin-top:8px">Erek Studio — Mustafa Salim Erek, independent developer, Türkiye.
+  Please include your device model and OS version; it usually saves a round trip.</p>
+</div>
+
+<h2>Common questions</h2>
+
+<div class="card">
+  <h3>My prayer times look wrong by a few minutes</h3>
+  <p>Prayer times depend on the calculation method, and mosques in the same city often
+  differ. Open <strong>Settings → Calculation method</strong> and pick the authority your
+  mosque follows. If it is still off, there is a per-prayer minute adjustment under
+  <strong>Settings → Adjustments</strong> so you can match your mosque exactly.</p>
+</div>
+
+<div class="card">
+  <h3>Notifications don't arrive, or arrive late</h3>
+  <p>On Android, battery optimisation is the usual cause: allow Waqt to run in the
+  background and permit exact alarms in the system settings. On iOS, check that
+  notifications are enabled for Waqt and that Focus or Do Not Disturb is not suppressing
+  them. Waqt schedules alerts locally, so this is always a device permission issue rather
+  than a server one.</p>
+</div>
+
+<div class="card">
+  <h3>The adhan is silent</h3>
+  <p>Check the notification sound setting for Waqt in your system settings, and make sure
+  your device is not in silent mode. The "I'm praying" quiet mode also mutes alerts on
+  purpose while it is active.</p>
+</div>
+
+<div class="card">
+  <h3>I subscribed but Pro features are locked</h3>
+  <p>Open the Pro screen and use <strong>Restore purchases</strong>. Make sure you are
+  signed in with the same Apple ID or Google account you purchased with. Subscriptions are
+  managed by the App Store or Google Play — you can view or cancel yours in your account
+  settings there, not inside the app.</p>
+</div>
+
+<div class="card">
+  <h3>Does Waqt need internet or my location?</h3>
+  <p>No to both. Prayer times are computed on your device from a bundled city database,
+  and the app never requests GPS permission. It works with no connection at all.</p>
+</div>
+
+<div class="card">
+  <h3>The qibla arrow doesn't rotate</h3>
+  <p>That is intentional. Waqt shows a fixed bearing for your selected city rather than a
+  live compass, because a live compass would require sensors and permissions the app
+  deliberately avoids. Face the direction shown relative to north.</p>
+</div>
+
+<h2>Privacy</h2>
+<div class="card">
+  <p>Waqt has no account, no login, and no developer-operated server. The full policy —
+  including exactly what the ad SDK collects — is here:<br>
+  <a href="https://gist.github.com/mustafasalimerek-bit/a534b01f71b861a967e24335285dbecb">Waqt Privacy Policy</a></p>
+</div>
+
+<hr>
+
+<h2 id="tr">Türkçe</h2>
+
+<div class="card">
+  <h3>İletişim</h3>
+  <p><a href="mailto:mustafasalimerek@gmail.com">mustafasalimerek@gmail.com</a></p>
+  <p class="muted" style="margin-top:8px">Doğrudan geliştiriciye ulaşır. Cihaz modelinizi ve
+  işletim sistemi sürümünüzü yazarsanız süreç kısalır.</p>
+</div>
+
+<div class="card">
+  <h3>Vakitler birkaç dakika farklı</h3>
+  <p>Vakitler hesaplama yöntemine göre değişir ve aynı şehirdeki camiler bile farklı
+  yöntem kullanabilir. <strong>Ayarlar → Hesaplama yöntemi</strong>'nden caminizin takip
+  ettiği kurumu seçin. Hâlâ oturmuyorsa <strong>Ayarlar → Düzeltmeler</strong> altından
+  her vakti dakika dakika kaydırıp caminize birebir uydurabilirsiniz.</p>
+</div>
+
+<div class="card">
+  <h3>Bildirimler gelmiyor veya geç geliyor</h3>
+  <p>Android'de en yaygın sebep pil optimizasyonudur: Waqt'ın arka planda çalışmasına ve
+  tam zamanlı alarm kurmasına izin verin. iOS'ta bildirimlerin açık olduğundan ve Odak /
+  Rahatsız Etme modunun bastırmadığından emin olun. Waqt bildirimleri cihazda kurar, yani
+  bu her zaman bir izin meselesidir.</p>
+</div>
+
+<div class="card">
+  <h3>Ezan sesi çıkmıyor</h3>
+  <p>Sistem ayarlarından Waqt'ın bildirim sesini ve cihazın sessiz modda olmadığını kontrol
+  edin. "Namazdayım" sessizlik modu da açıkken bildirimleri bilerek susturur.</p>
+</div>
+
+<div class="card">
+  <h3>Abone oldum ama Pro açılmadı</h3>
+  <p>Pro ekranından <strong>Satın alımları geri yükle</strong>'ye dokunun. Satın alma
+  yaptığınız Apple ID veya Google hesabıyla giriş yapmış olmanız gerekir. Abonelikler App
+  Store veya Google Play tarafından yönetilir; görüntüleme ve iptal işlemleri uygulamadan
+  değil o hesap ayarlarından yapılır.</p>
+</div>
+
+<div class="card">
+  <h3>İnternet veya konum gerekiyor mu?</h3>
+  <p>İkisi de gerekmiyor. Vakitler cihazınızdaki şehir veritabanından hesaplanır ve
+  uygulama hiçbir zaman konum izni istemez. Tamamen çevrimdışı çalışır.</p>
+</div>
+
+<div class="card">
+  <h3>Kıble oku dönmüyor</h3>
+  <p>Bu kasıtlı. Waqt canlı pusula yerine seçtiğiniz şehir için sabit bir yön gösterir;
+  canlı pusula, uygulamanın bilerek kaçındığı sensör ve izinleri gerektirirdi. Gösterilen
+  yönü kuzeye göre alın.</p>
+</div>
+
+<div class="card">
+  <h3>Gizlilik</h3>
+  <p>Waqt'ta hesap, giriş ve geliştiriciye ait sunucu yoktur. Reklam SDK'sının tam olarak
+  neyi topladığı dahil bütün metin:<br>
+  <a href="https://gist.github.com/mustafasalimerek-bit/a534b01f71b861a967e24335285dbecb">Waqt Gizlilik Politikası</a></p>
+</div>
+
+<footer class="muted">
+  Erek Studio · Waqt
+</footer>
+
+</body>
+</html>
